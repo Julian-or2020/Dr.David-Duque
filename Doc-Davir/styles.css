@@ -1,0 +1,1374 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*====== Fuentes ======*/
+
+@font-face {
+    font-family: 'heit';
+    src: url('font/HeiT-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geist-bold';
+    src: url('font/Geist-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geist-extrabold';
+    src: url('font/Geist-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geist-light';
+    src: url('font/Geist-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geist-medium';
+    src: url('font/Geist-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geist-regular';
+    src: url('font/Geist-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geist-semibold';
+    src: url('font/Geist-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* ===== HERO SECTION ===== */
+
+.hero {
+
+  
+    height: 700px;
+    background: url('img/img-holder.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(8, 40, 104, 0.45);
+    height: 700px;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+    margin-bottom: 100px;
+    font-family: "geist-semibold";
+    width: 700px;
+}
+
+.hero h1 span {
+    color: #9ff7e1;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    margin-bottom: 60px;
+    opacity: 0.9;
+    line-height: 3rem;
+    margin-top: -60px;
+    font-family: "geist-regular";
+    color: #DBEAFE;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    padding: 15px 28px;
+    border-radius: 40px;
+    color: #3166CC;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.2s ease;
+    font-family: "geist-light";
+    height: 50px;
+    width: 230px;
+    position: relative;
+
+}
+
+.hero-btn p {
+    margin: 0px auto;
+    margin-left: 45px;
+}
+
+
+
+.hero-btn:hover {
+    transform: scale(1.05);
+    background: #f3f9ff;
+}
+
+
+
+.hero-btn-icon {
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    z-index: 3;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+/*===== MAIN ======*/
+
+/* INFORMACION PRINCIPAL */
+
+.main-principal {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.principal-text {
+    width: 40%;
+    height: 80%;
+    margin-top: 90px;
+    margin-left: 80px;
+    display: block;
+    position: relative;
+
+}
+
+.content-profesional {
+    font-family: "geist-regular";
+    background-color: #CCFBF1;
+    width: 40%;
+    display: flex;
+    height: 35px;
+    border-radius: 50px;
+    color: #14B8AD;
+}
+
+.content-profesional img {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-top: 3px;
+    position: absolute;
+
+}
+
+.content-profesional p {
+    margin-left: 50px;
+    line-height: 35px;
+}
+
+.img-doctor {
+
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 30px;
+
+
+}
+
+.img-doctor img {
+    width: 550px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.42);
+    position: relative;
+    object-position: center -40px; 
+
+}
+
+.text-titulo {
+    font-family: "geist-light";
+    font-size: 4rem;
+    line-height: 3.5rem;
+    margin-top: 25px;
+}
+
+.text-especialista {
+    font-family: "geist-regular";
+    font-size: 1.8rem;
+    margin-top: 40px;
+    color: #6B7290;
+    line-height: 2rem;
+}
+
+.text-informacion {
+    font-family: "geist-light";
+    font-size: 1.4rem;
+    margin-top: 40px;
+    line-height: 1.8rem;
+    color: #6B7290;
+}
+
+/*SECTION CASOS*/
+.section-casos {
+    background: linear-gradient(to bottom, #CDFBF1, #ffffff);
+    height: 700px;
+    width: 100%;
+}
+
+.casos-text {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    display: block;
+    padding-top: 100px;
+}
+
+.casos-text h1 {
+    font-family: "geist-medium";
+    font-size: 3.5rem;
+}
+
+.casos-text p {
+    font-family: "geist-regular";
+    color: #4E66CC;
+    font-size: 1.5rem;
+    margin-top: 30px;
+
+
+}
+
+.casos-card {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+
+.card-exito {
+
+    width: 200px;
+    height: 150px;
+    padding: 40px;
+    display: block;
+    float: left;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.222);
+    transition: transform 0.3s ease;
+}
+
+.card-exito:hover {
+    transform: scale(1.1);
+
+}
+
+.card-exito img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-left: 60px;
+    margin-top: -15px;
+
+
+}
+
+.card-exito p {
+
+    font-family: "geist-regular";
+    line-height: 1.5rem;
+    text-align: center;
+    margin-top: 70px;
+    display: block;
+    font-size: 1.2rem;
+
+
+}
+
+/*SECTION ANTES Y DESPUES*/
+
+.section-pruebas {
+    height: 1100px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.section-transformacion {
+    background-color: #14B8A6;
+    height: 50px;
+    width: 30%;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.section-transformacion p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: "geist-medium";
+}
+
+.transformacion-titulo {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.transformacion-titulo h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: "geist-bold";
+}
+
+.transformacion-titulo p {
+    font-size: 1.3rem;
+    font-family: "geist-regular";
+}
+
+.content-imagenes {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 80px;
+    position: relative;
+}
+
+.card-imagenes {
+    width: 386px;
+    height: 650px;
+    margin: 0px auto;
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #CEFBF1);
+    max-height: 500px;
+    margin-bottom: 80px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.234);
+    transition: transform 0.2s ease;
+}
+
+.card-imagenes:hover {
+    transform: translate(15px, -15px);
+}
+
+.img-prueba {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.content-prueba {
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.content-prueba img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.content-prueba span {
+    font-size: 1.1rem;
+    font-family: "geist-regular";
+    margin-left: 65px;
+    line-height: 30px;
+}
+
+.pruebas-recuadro {
+
+    background-color: #C9F5EE;
+    height: 40px;
+    width: 80%;
+    border-radius: 50px;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 25px;
+
+}
+
+.pruebas-recuadro span {
+    font-size: 1rem;
+    color: #0D948B;
+    font-family: "geist-light";
+}
+
+.content-botom {
+    width: 100%;
+    height: 150px;
+    display: block;
+    text-align: center;
+}
+
+.content-botom p {
+    font-size: 1.5rem;
+    color: #0D948B;
+    font-family: "geist-regular";
+    margin-bottom: 30px;
+}
+
+.botom {
+    border-radius: 50px;
+    height: 50px;
+    width: 30%;
+    margin: auto;
+    line-height: 50px;
+    color: #ffffffff;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.234);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.botom:hover {
+    transform: scale(1.1);
+}
+
+.botom a {
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: "geist-regular";
+    color: #0066CF;
+    margin-left: -50px;
+}
+
+.icono-flecha {
+    width: 35px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+/*SECTION TRATAMIENTO*/
+
+.section-tratamiento {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 100px;
+    overflow: hidden;
+
+}
+
+.text-tratamiento {
+    width: 80%;
+    height: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+.text-tratamiento h1 {
+    font-size: 3rem;
+    font-family: "geist-regular";
+    margin-bottom: 20px;
+}
+
+.text-tratamiento p {
+    font-size: 1.5rem;
+    font-family: "geist-light";
+    color: #6B7280;
+    line-height: 2rem;
+}
+
+.destacada {
+    color: #0066CC;
+}
+
+.content-tratamiento {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.card-tratamiento {
+
+    width: 425px;
+    height: 350px;
+    margin: auto;
+    background: linear-gradient(to bottom, #CEFBF2, #CEFBF2, #CEFBF2, #EAFDF9, #EAFDF9, #EAFDF9, #EAFDF9, #EAFDF9, #EAFDF9, #EAFDF9, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffffff);
+    border: 2px solid #B8EFE7;
+    border-radius: 30px;
+}
+
+.card-tratamiento img {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.card-tratamiento h3 {
+    margin-left: 30px;
+    font-family: "geist-light";
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #1A1A1A;
+    margin-bottom: 15px;
+}
+
+.card-tratamiento p {
+    font-family: "geist-light";
+    font-size: 1.2rem;
+    margin-left: 30px;
+    color: #777F88;
+    width: 80%;
+
+}
+
+/*SECTION TESTIMONIOS*/
+.content-testimonios {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+    background-color: #0064C8;
+    color: #ffffffff;
+    display: block;
+}
+
+.text-testimonios {
+    text-align: center;
+    position: relative;
+    padding-top: 80px;
+}
+
+.text-testimonios h1 {
+    font-size: 3.5rem;
+    font-family: "geist-regular";
+    margin-bottom: 20px;
+}
+
+.text-testimonios p {
+    font-size: 1.8rem;
+    font-family: "geist-light";
+    margin-bottom: 40px;
+}
+
+.box-testimonios {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.card-testimonio {
+    width: 400px;
+    height: 355px;
+    overflow: hidden;
+    border: 2px solid #4886C5;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #1A6BBD;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card-testimonio:hover {
+    background-color: rgb(0, 57, 114);
+}
+
+.icono-comillas {
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.icono-estrellas {
+    margin-bottom: 15px;
+    width: 150px;
+}
+
+.card-testimonio p {
+    width: 80%;
+    font-size: 1.5rem;
+    font-family: "geist-light";
+}
+
+.card-testimonio span {
+    font-size: 1.2rem;
+    font-family: "geist-regular";
+    margin-top: 15px;
+}
+
+/*SECTION CONSULTA*/
+.section-consulta {
+    width: 100%;
+    height: 700px;
+    display: block;
+}
+
+.titulo-consulta {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 3rem;
+    font-family: "geist-regular";
+}
+
+.content-consulta {
+    margin: auto;
+    height: 550px;
+    width: 700px;
+    margin-top: 50px;
+    border: 2px solid #0066CC;
+    background-color: #DFFCF6;
+    border-radius: 30px;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.234);
+
+}
+
+.content-consulta h3 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    font-family: "geist-light";
+    color: #1A1A1A;
+}
+
+.content-consulta h1 {
+    font-size: 3.5rem;
+    font-family: "geist-light";
+    margin-top: 20px;
+    text-align: center;
+    color: #14B8A6;
+}
+
+.content-consulta p {
+    font-size: 1.3rem;
+    font-family: "geist-regular";
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.lista-consulta {
+    list-style: none;
+}
+
+
+
+.lista-consulta li {
+    margin-left: 100px;
+    font-size: 1.2rem;
+    font-family: "geist-light";
+    display: block;
+    position: absolute;
+    margin-top: -37px;
+
+}
+
+.lista-consulta img {
+    width: 50px;
+    height: 50px;
+    margin-left: 48px;
+    display: flex;
+    object-fit: cover;
+
+
+}
+
+.botom-consulta {
+    height: 50px;
+    width: 80%;
+    background-color: #0065CA;
+    margin: auto;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 15px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.botom-consulta:hover {
+    transform: scale(1.1);
+}
+
+.botom-consulta a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.1rem;
+    font-family: "geist-light";
+
+}
+
+/*SECTION UBICACION*/
+
+.content-ubicacion {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(to bottom, #CDFBF1, #ffffff);
+    margin-top: 80px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.content-ubicacion h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 3rem;
+    font-family: "geist-regular";
+}
+
+.content-total {
+    display: flex;
+    margin-top: 90px;
+
+
+}
+
+.column-imagen img {
+    width: 550px;
+    height: 600px;
+    object-fit: cover;
+    margin-left: 90px;
+    border-radius: 30px;
+}
+
+.column-informacion {
+
+    height: 610px;
+    width: 750px;
+    margin-left: 80px;
+    margin-top: 15px;
+}
+
+.section-ubicacion {
+    width: 90%;
+    height: 35%;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.234);
+}
+
+.icono-informacion {
+    width: 60px;
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 25px;
+
+}
+
+.text-ubicacion {
+    margin-top: 30px;
+    width: 70%;
+    height: 80%;
+    display: block;
+    margin-left: 25px;
+}
+
+.text-ubicacion h2 {
+    font-size: 1.5rem;
+    font-family: "geist-regular";
+    margin-bottom: 5px;
+}
+
+
+
+.section-horarios {
+    width: 90%;
+    height: 30%;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.234);
+
+}
+
+.text-direccion {
+    font-size: 1rem;
+    font-family: "geist-light";
+    color: #6B7280;
+    margin-bottom: 5px;
+}
+
+.text-direccion-complement {
+    font-size: 1rem;
+    font-family: "geist-light";
+    color: #B28680;
+    line-height: 1.5rem;
+
+}
+
+.text-horarios {
+    margin-top: 30px;
+    width: 70%;
+    height: 80%;
+    display: block;
+    margin-left: 25px;
+}
+
+.text-horarios h2 {
+    font-size: 1.5rem;
+    font-family: "geist-regular";
+    margin-bottom: 5px;
+}
+
+.text-horario-semana {
+    font-size: 1rem;
+    font-family: "geist-light";
+    color: #6B7280;
+    margin-bottom: 5px;
+}
+
+.text-horario-complement {
+    font-size: 1rem;
+    font-family: "geist-light";
+    color: #B28680;
+    line-height: 1.5rem;
+}
+
+.section-contacto {
+    display: flex;
+    width: 90%;
+    height: 20%;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.234);
+    margin-top: 20px;
+}
+
+.text-contacto {
+    margin-top: 30px;
+    width: 70%;
+    height: 80%;
+    display: block;
+    margin-left: 25px;
+}
+
+.text-contacto h2 {
+    font-size: 1.5rem;
+    font-family: "geist-regular";
+    margin-bottom: 5px;
+}
+
+.text-contacto p {
+    font-size: 1rem;
+    font-family: "geist-light";
+    color: #B28680;
+    line-height: 1.5rem;
+}
+
+/*Footer*/
+.footer {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background-color: #1A1A1A;
+    color: #ffffff;
+    display: flex;
+
+}
+
+.nombre-medico {
+    width: 25%;
+    height: 50%;
+    margin-left: 90px;
+    padding-top: 60px;
+}
+
+.nombre-medico h3 {
+    font-size: 30px;
+    font-family: "geist-regular";
+    margin-bottom: 30px;
+
+}
+
+.nombre-medico p {
+    font-size: 18px;
+    font-family: "geist-light";
+    line-height: 2rem;
+    color: #78A1AF;
+}
+
+.footer-contacto {
+    width: 20%;
+    height: 50%;
+    margin-left: 90px;
+    padding-top: 60px;
+}
+
+.footer-contacto h3 {
+    font-size: 25px;
+    font-family: "geist-regular";
+    margin-bottom: 40px;
+}
+
+.text-footer-contacto {
+    display: flex;
+}
+
+.text-footer-contacto img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.text-footer-contacto p {
+    font-size: 18px;
+    font-family: "geist-light";
+    margin-left: 35px;
+    color: #78A1AF;
+}
+
+.footer-ubicacion {
+    width: 25%;
+    height: 50%;
+    margin-left: 40px;
+    padding-top: 60px;
+}
+
+.footer-ubicacion h3 {
+    font-size: 25px;
+    font-family: "geist-regular";
+    margin-bottom: 40px;
+}
+
+.text-footer-ubicacion {
+    display: flex;
+}
+
+.text-footer-ubicacion img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.text-footer-ubicacion p {
+    font-size: 18px;
+    font-family: "geist-light";
+    margin-left: 35px;
+    color: #78A1AF;
+
+}
+
+.linea {
+    width: 80%;
+    height: 1px;
+    background: #1E2939;
+    position: absolute;
+    margin-top: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+
+.copyright {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 260px;
+}
+
+.copyright p {
+    font-size: 18px;
+    font-family: "geist-light";
+    color: #78A1AF;
+}
+
+
+@media (max-width: 768px) {
+
+    /*HERO SECTION*/
+    .hero {
+        width: 800px;
+        height: 650px;
+        overflow: hidden;
+    }
+
+    .hero-overlay {
+        height: 650px;
+        min-width: 820px;
+    }
+
+    .hero-content {
+        margin-left: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+        width: 600px;
+        line-height: 3rem;
+        margin-top: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        width: 600px;
+    }
+
+    .hero-btn {
+        width: 200px;
+        height: 40px;
+        margin-top: 50px;
+    }
+
+    .hero-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .hero-btn p {
+        font-size: 1rem;
+    }
+
+
+    /*INFORMACION PRINCIPAL*/
+    .main-principal {
+        width: 800px;
+        height: 1100px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .principal-text {
+
+        width: 600px;
+        height: 450px;
+        margin-top: 15px;
+        margin-left: 95px;
+    }
+
+    .content-profesional {
+        width: 300px;
+    }
+
+    .img-doctor {
+        order: -1;
+        display: block;
+        margin-left: 95px;
+
+    }
+
+    .img-doctor img {
+        width: 600px;
+    }
+
+    /*SECTION CASO EXITO*/
+    .section-casos {
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        overflow: hidden;
+    }
+
+    .casos-text {
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .casos-text h1 {
+        font-size: 4rem;
+    }
+
+    .casos-text p {
+        font-size: 2rem;
+    }
+
+    .casos-card {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .card-exito {
+        width: 600px;
+        height: 50px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .card-exito p {
+        line-height: 30px;
+        margin-left: 120px;
+        font-size: 1.4rem;
+        font-family: "geist-light";
+        margin-top: 10px;
+    }
+
+    .card-exito img {
+        margin-left: 30px;
+    }
+
+    /*SECTION ANTES Y DESPUES*/
+    .section-pruebas {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        height: 100%;
+        margin-top: 30px;
+    }
+
+    .section-transformacion {
+        width: 600px;
+        height: 70px;
+    }
+
+    .section-transformacion p {
+        line-height: 70px;
+        font-size: 2rem;
+    }
+
+    .content-imagenes {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 100%;
+    }
+
+    .card-imagenes {
+        width: 600px;
+        min-height: 720px;
+        object-fit: cover;
+
+    }
+
+    .img-prueba {
+        object-fit: cover;
+        width: 600px;
+    }
+
+    .botom {
+        width: 450px;
+        height: 60px;
+    }
+
+    .botom a {
+        line-height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .icono-flecha {
+        margin-top: 20px;
+    }
+
+    /*SECTION TRATAMIENTO*/
+    .section-tratamiento {
+        width: 800px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .text-tratamiento {
+        height: 100%;
+    }
+
+    .content-tratamiento {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        height: 100%;
+    }
+
+    .card-tratamiento {
+        width: 600px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .card-tratamiento img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0px;
+    }
+
+    /*SECTION TESTIMONIOS*/
+    .content-testimonios {
+        width: 800px;
+        height: 100%;
+        margin-top: 80px;
+    }
+
+    .text-testimonios {
+        width: 700px;
+        margin: auto;
+    }
+
+    .text-testimonios h1 {
+        font-size: 2.5rem;
+    }
+
+    .box-testimonios {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-testimonio {
+        width: 600px;
+        height: 280px;
+    }
+
+    .card-testimonio p {
+        width: 100%;
+    }
+
+    .section-consulta {
+        width: 800px;
+        height: 100%;
+    }
+
+    .lista-consulta {
+        width: 600px;
+    }
+
+    .lista-consulta li {
+        width: 600px;
+    }
+
+    .content-ubicacion {
+        width: 800px;
+        height: 1500px;
+    }
+
+    .content-ubicacion h1 {
+        margin-bottom: 10px;
+
+    }
+
+    .content-total {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .column-imagen {
+        margin-top: 10px;
+        width: 700px;
+        margin: auto;
+    }
+
+    .column-imagen img {
+        object-position: center;
+    }
+
+    /*footer*/
+    .footer {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        height: 600px;
+    }
+
+    .nombre-medico {
+        margin-left: 50px;
+        height: 45px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .nombre-medico h3 {
+        width: 600px;
+    }
+
+    .nombre-medico p {
+
+        width: 600px;
+        font-size: 1.5rem;
+    }
+
+    .footer-contacto {
+        margin-left: 50px;
+        height: 45px;
+        width: 100%;
+
+    }
+
+    .footer-contacto h3 {
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+
+    .text-footer-contacto {
+
+        margin-top: 20px;
+    }
+
+    .text-footer-contacto p {
+        width: 600px;
+        font-size: 1.5rem;
+    }
+
+    .footer-ubicacion {
+        margin-left: 50px;
+        height: 45px;
+        width: 100%;
+
+    }
+
+    .footer-ubicacion p {
+        width: 600px;
+        font-size: 1.5rem;
+    }
+
+    .linea {
+        
+        height: 2px;
+        background: #1E2939;
+        position: absolute;
+        margin-top: 510px;
+        min-width: 1240px;
+        width: 100%;
+        
+    }
+
+    .copyright {
+        width: 800px;
+        text-align: center;
+        margin-top: 520px;
+    }
+}
